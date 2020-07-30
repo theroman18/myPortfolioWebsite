@@ -6,6 +6,8 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: "./"
         },
-        browser: "firefox"
+        browser: "firefox",
+        files: ["*.html", "css/*.css", "js/*.js"],
+        notify: false
     });
 });
